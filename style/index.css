@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/fonts/fonts/Roboto-Regular.woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.header-nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-nav .container .menu-btns {
+    display: flex;
+    gap: 25px;
+
+}
+
+.header-nav .container .menu-btns a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+    width: max-content;
+}
+
+.header-nav .container .menu-btns a:hover {
+    color: rgb(0, 26, 255);
+}
+
+.header-nav .container .log-in-btn a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.header-nav .container .log-in-btn a:hover {
+    color: rgb(0, 26, 255);
+}
+
+
+
+
+/*tab*/
+.tab-container {
+    padding: 50px 0;
+}
+
+.tab {
+    overflow: hidden;
+    /* border: 1px solid rgb(228, 237, 255); */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tab button {
+    background-color: inherit;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: rgb(228, 237, 255);
+}
+
+.tab button.active {
+    background-color: rgb(228, 237, 255);
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    background-color: rgb(228, 237, 255);
+
+}
+
+.tab-content-block {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 6px 0px;
+    border-top: none;
+    background-color: rgb(228, 237, 255);
+}
+
+.tabcontent img {
+    width: 100%;
+}
+
+
+.tabcontent h4 {
+    font-weight: 600;
+}
+
+
+.tabcontent ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tabcontent ul>li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.tabcontent ul>li:before {
+    content: '✔';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+.tab-container .container .tablinks {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tab-container .container .tablinks img {
+    height: 30px;
+}
+
+
+
+.btn {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+
+/*slider*/
+.mySwiper {
+    height: 450px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-slide {
+    background-color: rgb(230, 241, 255) !important;
+}
+
+.slider-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    height: 100%;
+    gap: 15px;
+    margin: auto;
+}
+
+.slider-block img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-block .slider-block-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+}
+
+.footer {
+    width: 100%;
+    min-height: 224px;
+    margin-top: 110px;
+    padding: 50px 0;
+    background: #f6f7ff;
+}
+.footer ul{
+    list-style: none;
+
+}
+.footer__wrap {
+    position: relative;
+    display: flex;
+}
+
+.footer__left {
+    width: 43%;
+    display: flex;
+}
+
+.footer__logo {
+    width: 263px;
+    margin-right: 65px;
+}
+
+.footer__address, .footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #707c87;
+}
+
+.footer__nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer__nav li {
+    padding-right: 28px;
+    padding-bottom: 10px;
+}
+
+.footer__nav li:last-child {
+    padding-right: 0;
+}
+
+.footer__nav li a , .footer a{
+    font-weight: 00;
+     text-decoration:none;
+    color: black;
+    font-size: 15px; 
+}
+.footer__nav li a:hover , .footer a:hover{
+    color: blue;
+ }
+
+.footer__right {
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    padding-left: 55px;
+}  
+.footer__list-tel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 71%;
+}
+@media (max-width: 1100px) {
+    .footer__list-tel {
+       flex-wrap: wrap;
+    }
+}
+ .social {
+  display: flex;
+  justify-content: space-between;
+  width: 105px;
+  gap: 10px;
+ }
+ 
