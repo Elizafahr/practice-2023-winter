@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PetCook</title>
     <link rel="stylesheet" href="style/style.min.css" />
   </head>
 
@@ -13,7 +13,7 @@
       <div class="header_nav">
         <div class="container">
           <div class="logo">
-            <img src="/media/img/logotype.svg" alt="" srcset="" />
+            <img src="/PetCook/media/img/logotype.svg" alt="" srcset="" />
           </div>
           <div class="nav-btns">
             <div class="nav-btn">
@@ -32,13 +32,13 @@
 
           <div class="rigth-area-btns">
             <a href="#">
-              <img src="/media/img/search.svg" alt="search" />
+              <img src="/PetCook/media/img/search.svg" alt="search" />
             </a>
             <a href="#">
-              <img src="/media/img/cart.jpg" alt="cart" />
+              <img src="/PetCook/media/img/cart.jpg" alt="cart" />
             </a>
             <a href="#">
-              <img src="/media/img/login.svg" alt="login" />
+              <img src="/PetCook/media/img/login.svg" alt="login" />
             </a>
           </div>
         </div>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="img-position">
-          <img src="/media/img/Group 193.png" alt="" srcset="" />
+          <img src="/PetCook/media/img/Group 193.png" alt="" srcset="" />
         </div>
       </div>
     </div>
@@ -116,9 +116,9 @@
 
     <div class="product-block container" id="product"> 
       <div class="product-photo">
-        <img src="/media/img/9.jpg" alt="" />
-        <img src="/media/img/10.jpg" alt="" />
-        <img src="/media/img/11.jpg" alt="" />
+        <img src="/PetCook/media/img/9.jpg" alt="" />
+        <img src="/PetCook/media/img/10.jpg" alt="" />
+        <img src="/PetCook/media/img/11.jpg" alt="" />
       </div>
       <div class="product-description-block">
         <div class="product-first-row">
@@ -213,11 +213,11 @@
             Выберите количество
             <div class="num-input-amount">
               <button id="minus" onclick="minus()">
-                <img src="/media/img/minus.svg" alt="" />
+                <img src="/PetCook/media/img/minus.svg" alt="" />
               </button>
-              <input type="text" value="1"  min="1" id="amountProduct" />
+              <input type="text" onchange="calk()" value="1"  min="1" id="amountProduct" />
               <button id="plus" onclick="plus()">
-                <img src="/media/img/plus.svg" onclick="calk()" alt="" />
+                <img src="/PetCook/media/img/plus.svg" onclick="calk()" alt="" />
               </button>
             </div>
           </div>
@@ -226,7 +226,7 @@
           <div class="product-delivery-option">
             <div class="name-dlivery">
               <div class="product-radio">
-                <input type="radio" onchange="calk()" id="onceDelivery" name="product" />
+                <input type="radio" onchange="calk()" checked="true" id="onceDelivery" name="product" />
                 <label for="onceDelivery">Разовая покупка</label>
               </div>
               <p class="price">2300Р</p>
@@ -369,7 +369,9 @@
           помочь ему почувствовать себя активным в пожилом возрасте или
           поддержать иммунитет. Приобретая питание PetCook, вы можете быть
           уверены, что ваш питомец получает необходимое количество
-          микроэлементов, а значит он будет здоровый и бодрый. Здоровое
+          микроэлементов, а значит он будет здоровый и бодрый.
+          <br><br>
+           Здоровое
           пищеварение, крепкие кости и красивая, гладкая шерсть — это результат
           тщательно подобранного сочетания ингредиентов, питательных веществ.
           Команда PetCook уделяет большое внимание исследованию микробиомы, его
@@ -379,7 +381,7 @@
         </p>
         <div class="btn">Узнать больше</div>
       </div>
-      <img src="/media/img/12.jpg" alt="puppy" />
+      <img src="/PetCook/media/img/12.jpg" alt="puppy" />
     </div>
 
     <div class="contact container">
