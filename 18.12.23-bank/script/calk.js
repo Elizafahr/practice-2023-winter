@@ -376,16 +376,9 @@ var setCurProcent = function setCurProcent() {
         procentSum = 0;
     } else {
         procent = Number(inputFirstpayRange.value);    /* получает % */
-
-
-        calcProcentValue.textContent = procent;    /* выводим % в html */
-
-
+        calcProcentValue.textContent = procent;    /* выводим % в html **/
         procentSum = generalSum / 100 * procent;    /* вычисляем какой % от суммы */
-
-
         inputFirstpay.value = procentSum;    /* добавляет procent в value инпута(первоначальный взнос) */
-
     }
 };
 
